@@ -1,43 +1,121 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>Synesthesis</title>
- <style>
-     body{
-         background-color: cadetblue;
-         color:aliceblue;
-     }  
-     h1,h2,h3,{
-         color:yellow;
-     }
-     .formula{
-         background-color: black;
-         color:#7DCD85;
-     }
-    
-    
-    
-    
-    </style>   
-</head> 
+<meta charset="utf-8">
+<title>Synesthesis - Home</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="fontstyles.css" />
+<link rel="icon" href="images/synesthesis-logo-small.png" sizes="16x16 32x32" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
+<script> 
+$(document).ready(function(){
+    $("#transcript_toggle").click(function(){
+        $("#transcript").slideToggle("slow");
+    });
+});
+</script>
+</head>
+
 <body>
-    <h1>Music Analysis for Animation</h1>
+
+<!-- PAGE CONTENT EXCEPT FOR FOOTER -->
+
+<div class="container">
+
+    <!-- ------ HEADER ------ -->
+
+    <div class="header_wrapper">
+		<div class="logo_title_bg">
+			<div class="logo_title">
+				<div class="logo"><img src="images/synesthesis-logo-small.png" alt="synesthesisdesiero1mj logo"></img></div>
+            <div class="site_name">Synesthesis</div>
+			</div>
+			
+        </div>    
+        <!-- NAVIGATION -->
+        
+        <div class="nav_wrapper"> 
+            
+            <div class="navbar" id="myNavbar">
+                <a href = "index.html" class= "selected">Home</a>
+                    
+                <a href = "about.html">About</a>                    
+                    
+                <a href = "workshop.html">Synesthesia Workshop</a>
+                    
+                <a href = "contact.html">Contact</a>
+                    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
+            </div>
+        </div>
+        
+    </div>
+
+   
+    <!-- ------ MAIN CONTENT AREA ------ -->
     
-<p>Archetypes of Musical texture <b>Gestures</b> <mark> Visualisation</mark> <i>Score</i>
-</p>
+    <h1>Welcome!</h1>
+           
+    <div class="content_wrapper">
+        <div class="contentbox_1">
+            <div class="videobox">
+                <div class="videobox_text">
+                    <h2>Taking model of synesthesia sensory pairings we give performance multisensory experience</h2>
+                </div>
+                <div class="videobox_video">
+                    <!--<img src="images/video_placeholder.jpg"></img>-->
+                    <iframe width="640" height="360" src="https://player.vimeo.com/video/210241386" frameborder="0" allowfullscreen></iframe>
+					
+                </div>
+                <div class="transcript_reveal">
+                    <button id="transcript_toggle">video transcript</button>
+                </div>
+                
+                <div id="transcript">
+                    <p>Interview with Tim Doyle, composer: "I associate certain keys with colours, b-minor is yellow, a-minor is red, it is my personal subjective experience." </p>
+                    <p>Interview with Dr Kevin Mitchell, neuroscientist: "Synesthesia is a strange condition, where some people perceive addtional extra sensations when they hear particular sounds or see shapes, letters or colours. </p>
+                    <p>Certantly there is lots of examples of very creative people who are synesthetes, and whos artistry, music or painting, was informed by synesthesia and who put an effort to communicate their subjective experience.</p> 
+                    <p>Composers synesthetes such as Liszt, Messiaen, artists like Kandinsky.</p> 
+                    <p>Téada Trio (Svetlana Rudenko, Tim Doyle, Matt Rafter) performed in National Concert Hall on 3d May 2017, Visual Music Concert, Granados Trio, Traditional Irish Suite Bealtaine by Tim Doyle. </p> 
+                </div>
+            </div>
+        </div> 
 
+</div>
 
-<h2 class="formula">Visuals
-<i>screen</i>
-<sup>1 references</sup></h2>
-<h3>Art Exhibitions</h3>
-<ul>
-    <li>entertainment</li>
-    <li>easy access</li>
-    <li>animated art</li>
-</ul>
-<a href="http://makeshop.ie">Made in Dublin</a>
+<!-- FOOTER -->
 
-<img src="https://dublin.sciencegallery.com/sites/all/themes/makeshop_microsite/mslogo.png" alt=" space between, the makeshop logo" width="50%">
+<div class="footer">
+    <div class="left-block">
+        <h6 style="color:#fff">latest updates</h6>
+        <div class="social_container">
+            <a href="https://www.facebook.com/svetlana.rudenko.official/"><img class="social_links_first" src="images/social/fb.png"></a>
+            <a href="https://twitter.com/lanarude"><img class="social_links" src="images/social/tw.png"></a>
+            <a href="https://www.youtube.com/channel/UCiP7QmuqpLo_yI0PzGv0SEA"><img class="social_links" src="images/social/yt.png"></a>
+            <a href="https://www.instagram.com/synesthesis/" target="_blank"><img class="social_links" src="images/social/inst.png"></a>
+        </div>
+    </div>
+    <div class="center-block">
+        <h6 style="color:#fff">Synesthesis <br />Copyright © Syn 2018 <br /> Terms and Conditions</h6>
+    </div>
+    <div class="right-block">
+        <h6 style="color:#fff"><u>Location</u><br /> Synesthesis <br/> Cross-modal lab <br/> Trinity, Dublin</h6>
+    </div>   
+</div>
 
+<!-- JS STUFF -->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+        
 </body>
 </html>
