@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Synesthesis - Contact</title>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="media/css/styles.css" />
 <!--<link rel="stylesheet" type="text/css" href="form.css" />  -->  
-<link rel="stylesheet" type="text/css" href="fontstyles.css" />
-<link rel="icon" href="images/synesthesis-logo-small.png" sizes="16x16 32x32" type="image/png">
+<link rel="stylesheet" type="text/css" href="media/css/fontstyles.css" />
+<link rel="icon" href="media/images/synesthesis-logo-small.png" sizes="16x16 32x32" type="image/png">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
   
@@ -28,7 +28,7 @@
     <div class="header_wrapper">    
         <div class="logo_title_bg">
 			<div class="logo_title">
-				<div class="logo"><img src="images/synesthesis-logo-small.png" alt="synesthesis logo"></img></div>
+				<div class="logo"><a href="/"><img src="media/images/synesthesis-logo-small.png" alt="synesthesis logo"></img></a></div>
 				<div class="site_name">Synesthesis</div>
 			</div>
 			
@@ -43,7 +43,7 @@
                     
                 <a href = "about.html">About</a>                    
                     
-                <a href = "workshop.html">Synesthesia Workshop</a>
+                <a href = "workshop.html">Workshop</a>
                     
                 <a href = "contact.html" class= "selected">Contact</a>
                     
@@ -60,7 +60,7 @@
         
 		<div class="contentbox_1">
             
-			<h1>Contact us</h1>
+			<h1>Contact</h1>
 			            
 			<div class="about_box">
                 <!--- GOOGLE MAP ---------->
@@ -69,34 +69,50 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.997556042422!2d-6.259123371532402!3d53.34327806991345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2700fe0d8c716167!2sTrinity+College+Dublin!5e0!3m2!1sen!2sie!4v1520786695674" width="90%" height="150px !important" frameborder="0" style="margin-top:20px" allowfullscreen></iframe>
                 </div>  
             </div>  
-        </div>    
+        </div>
                 
         <div class="contentbox_2">
-			<h1>Get in Touch</h1>
-			
 		
-                <div class="about_img">
-                    <h2>Contact Form</h2>
-                     <hr>
-                    <form name='registration' onSubmit="return Validation();" method="post" action="mailto:rudenkos@tcd.ie">
-                        <ul>
-                        <li>
-                          <label for="fname">First name:</label></li>
-                        <li><input type="text" name="fname" size="50" placeholder="i.e. Anna" /></li>
-                        <li><label for="lname">Last name:</label></li>
-                        <li><input type="text" name="lname" size="50" placeholder="i.e. Byrne" /></li>
-                        <li><label for="address">Address:</label></li>
-                        <li><input type="text" name="address" size="50" placeholder="i.e. Sreet, Location, PO box" /></li>
-                        <li><label for="Mnumber">Mobile number:</label></li>
-                        <li><input type="text" name="Mnumber"  placeholder="i.e: 00685439"/></li>
-                        <li><label for="email">Email:</label></li>
-                        <li><input type="text" name="email" size="50" placeholder="i.e: Anna.Byrne@gmail.com" /></li>
-                        <li><label for="desc">Inquiry:</label></li>
-                        <li><textarea name="inquiry" id="inquiry"></textarea></li>
-                        <li><input type="submit" name="submit" value="Submit" /></li>
-                        </ul>
-                        </form>                    
-                </div>    
+                <div class="blockContact">
+                    <div>
+                        <div class="column sizeW50p gutterHalfRight">
+                            <h2>Contact Form</h2>
+                            <hr/>
+                            <div class="textContent">
+                                <form name='registration' onSubmit="return Validation();" method="post" action="mailto:rudenkos@tcd.ie">
+                                    <ul>
+                                        <li><label for="fname">First name:</label></li>
+                                        <li><input type="text" name="fname" size="50" placeholder="i.e. Anna" /></li>
+                                        <li><label for="lname">Last name:</label></li>
+                                        <li><input type="text" name="lname" size="50" placeholder="i.e. Byrne" /></li>
+                                        <li><label for="address">Address:</label></li>
+                                        <li><input type="text" name="address" size="50" placeholder="i.e. Sreet, Location, PO box" /></li>
+                                        <li><label for="Mnumber">Mobile number:</label></li>
+                                        <li><input type="text" name="Mnumber"  placeholder="i.e: 00685439"/></li>
+                                        <li><label for="email">Email:</label></li>
+                                        <li><input type="text" name="email" size="50" placeholder="i.e: Anna.Byrne@gmail.com" /></li>
+                                        <li><label for="desc">Inquiry:</label></li>
+                                        <li><textarea name="inquiry" id="inquiry" class="inquiry"></textarea></li>
+                                        <li><input type="submit" name="submit" value="Submit" /></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="column sizeW50p gutterHalfLeft">
+                            <h2>Contact Information</h2>
+                            <hr>
+                            <div class="textContent">
+
+                                <p>Address: Synesthesis, Cross-modal lab, Trinity, Dublin<br/><br/>
+                                    Phone: <br /><br/>
+
+                                    E-mail: rudenkos@tcd.ie<br /><br/>
+                                    Website: <a href=" http://synesthesis18.github.io" target="_blank">Synesthesis</a><br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               
                 <!-- include JavaScript file here -->
                <script>
@@ -199,22 +215,11 @@
               
                 
                 <!---HOURS LOCATION--------->
+            <!--
                 <div class="about_text_1">
-                    
- 
-					<h2>Contact Information</h2>
-                    <hr>
- 
-					<p>Address: Synesthesis, Cross-modal lab, Trinity, Dublin<br/><br/>
-                    Phone: <br /><br/>
-                   
-                    E-mail: rudenkos@tcd.ie<br /><br/>
-                    Website: <a href="http://www.svetlana-rudenko.com" target="_blank">Synesthesis</a><br/>    
-                        
-                        
                    <br/>
                 </div>
-                
+                -->
             </div>
 			
 		</div>
@@ -223,39 +228,39 @@
     </div>
 </div>
 
-<div class="footer">
-    <div class="left-block">
-        <h6 style="color:#fff"> latest updates</h6>
-        <div class="social_container">
-            <a href="https://www.facebook.com/svetlana.rudenko.official/"><img class="social_links_first" src="images/social/fb.png"></a>
-            <a href="https://twitter.com/lanarude"><img class="social_links" src="images/social/tw.png"></a>
-            <a href="https://www.youtube.com/channel/UCiP7QmuqpLo_yI0PzGv0SEA"><img class="social_links" src="images/social/yt.png"></a>
-            <a href="https://www.instagram.com/synesthesis/" target="_blank"><img class="social_links" src="images/social/inst.png"></a>
+    <div class="footer">
+        <div class="left-block">
+            <h6 style="color:#fff"> latest updates</h6>
+            <div class="social_container">
+                <a href="https://www.facebook.com/svetlana.rudenko.official/"><img class="social_links_first" src="media/images/social/fb.png"></a>
+                <a href="https://twitter.com/lanarude"><img class="social_links" src="media/images/social/tw.png"></a>
+                <a href="https://www.youtube.com/channel/UCiP7QmuqpLo_yI0PzGv0SEA"><img class="social_links" src="media/images/social/yt.png"></a>
+                <a href="https://www.instagram.com/synesthesis/" target="_blank"><img class="social_links" src="media/images/social/inst.png"></a>
+            </div>
+        </div>
+        <div class="center-block">
+            <h6 style="color:#fff">Synesthesis <br />Copyright © Syn 2018 <br /> Terms and Conditions</h6>
+        </div>
+        <div class="right-block">
+            <h6 style="color:#fff"><u>Location</u><br /> Synesthesis <br/> Cross-modal lab <br/> Trinity, Dublin</h6>
         </div>
     </div>
-    <div class="center-block">
-        <h6 style="color:#fff">Synesthesis <br />Copyright © Syn 2018 <br /> Terms and Conditions</h6>
-    </div>
-    <div class="right-block">
-        <h6 style="color:#fff"><u>Location</u><br /> Synesthesis<br/> Cross-modal lab<br/> Trinity, Dublin</h6>
-    </div>   
-</div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
-</script> 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
     <!--CONTACT FORM------>
-<script>
+    <script>
 
-</script>
+    </script>
   
  
 </body>
