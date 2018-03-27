@@ -123,8 +123,24 @@ body{
     position:absolute;
 	left:5px;
 	max-width:10px;
+}
 
-    margin-top: 12px;
+@media screen and (max-width: 967px) {
+    .logo_for_gallery{
+        margin-top:50px;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .logo_for_gallery{
+        margin-top:120px;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .logo_for_gallery{
+        margin-top:187px;
+    }
 }
 
 .site_name{
@@ -133,54 +149,11 @@ body{
     padding: 20px 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.4em;
+    font-size: 4.4em;
     line-height: normal;
-    color: #4f281a;
-
-
-}
-
-@media screen and (max-width: 967px) {
-    .logo_for_gallery{
-/*        margin-top:50px;
-        margin-top:35px;*/
-    }
-}
-@media screen and (max-width: 780px) {
-    .logo_for_gallery{
-        margin-top:25px;
-    }
-    .logo_for_gallery img{
-        max-width: 130px;
-        height: auto;
-    }
-}
-@media screen and (max-width: 584px) {
-    .logo_for_gallery{
-/*        margin-top:120px; */
-        margin-top:95px;
-    }
-    .logo_for_gallery img{
-        max-width: 130px;
-        height: auto;
-    }
-    .site_name {
-        font-size: 2.4em;
-    }
-}
-
-@media screen and (max-width: 546px) {
-    .logo_for_gallery{
-        /*        margin-top:187px; */
-        margin-top:95px;
-    }
-    .logo_for_gallery img{
-        max-width: 130px;
-        height: auto;
-    }
-    .site_name {
-        font-size: 2.4em;
-    }
+	color: #4f281a;
+	
+	
 }
 
 /*_______________________________LOGO & MENU___________________________*/
