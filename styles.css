@@ -139,7 +139,8 @@ body{
     display: block;
     margin: 0;
     padding: 20px 0;
-    text-align: left;
+    text-align: center;
+    margin-left: 40px;
     font-family: 'Open Sans', sans-serif;
     font-size: 4.4em;
     line-height: normal;
